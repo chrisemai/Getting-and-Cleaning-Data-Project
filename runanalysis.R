@@ -81,7 +81,3 @@ datafinal
 #average of each variable for each activity and each subject.
 datafinal_mean <- datafinal %>% group_by(activity_label,subject) %>% summarize_all(funs(mean))
 
-dim(datafinal_mean) 
-
-
-
